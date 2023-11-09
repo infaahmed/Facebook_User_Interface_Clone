@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- bootstrap css file link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Facebook Clone</title>
+</head>
+<body>
+    <!-- login -->
+    <div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-4">
+        <!-- left-text -->
+        <div class="text-center text-lg-start">
+            <h1 class="text-primary mt-5 fw-bold fs-0">Facebook</h1>
+            <p class="w-75 mx-auto mx-lg-0 fs-5">Facebook helps you connect and share with the people in your life</p>
+        </div>
+        <!-- login form -->
+        <div style="max-width: 28rem; width: 100%;" class="mx-auto mx-lg-0">
+            <div class="bg-white shadow rounded p-3 input-group-lg">
+                <input type="email" class="form-control my-3" placeholder="Email address or phone number">
+                <input type="password" class="form-control my-3" placeholder="Password"> 
+                <a href="home.html">
+                    <button class="btn btn-primary w-100 my-3">Log In</button>
+                </a>
+                <a href="#" class="text-decoration-none text-center">
+                    <p>Forgotten Password?</p>
+                </a>
+                <!-- create account button -->
+                <hr>
+                <div class="text-center my-4">
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Create New Account</button>
+                </div>
+                <!-- sign up modal -->
+                <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="modalLable" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- modal header -->
+                            <div class="modal-header">
+                                <div>
+                                    <h2 class="modal-title fs-4" id="modalLable">Sign Up</h2>
+                                    <p class="text-muted fs-6">It's quick and easy</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- modal body -->
+                            <div class="modal-body">
+                                <!-- name -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name" required>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Surname">
+                                    </div>
+                                </div>
+                                <!-- email,password -->
+                                <input type="email" class="form-control my-3" placeholder="Mobile number or email address">
+                                <input type="password" class="form-control my-3" placeholder="New Password">
+                                <!-- date of birth -->
+                                <div class="row my-3">
+                                    <span class="text-muted fs-6">
+                                        Date of Birth <i class="fa-solid fa-circle-question" style="font-size: 13px;"></i>
+                                    </span>
+                                    <div class="col">
+                                        <select class="form-select">
+                                            <option value="1">One</option>
+                                            <option value="2">two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select">
+                                            <option value="1">One</option>
+                                            <option value="2">two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select">
+                                            <option value="1">One</option>
+                                            <option value="2">two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- gender -->
+                                <div class="row my-3">
+                                    <span class="text-muted fs-6">
+                                        Gender <i class="fa-solid fa-circle-question" style="font-size: 13px;"></i>
+                                    </span>
+                                    <div class="col">
+                                        <div class="border rounded p-2">
+                                            <label for="gender-1" style="cursor: pointer;">Male</label> 
+                                            <input type="radio" class="form-check-input" name="gender" id="gender-1" checked style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="border rounded p-2">
+                                            <label for="gender-2" style="cursor: pointer;">Female</label>
+                                            <input type="radio" class="form-check-input" name="gender" id="gender-2" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="border rounded p-2">
+                                            <label for="gender-3" style="cursor: pointer;">Other</label>
+                                            <input type="radio" class="form-check-input" name="gender" id="gender-3" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-muted fs-6">Lorem, ipsum dolor sit amet consectetur.</p>
+                                </div>
+                                <!--submit btn -->
+                                <div class="text-center mt-3">
+                                    <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+            <div class="my-5 pb-2 text-center">
+                <p class="fw-bold"><a href="#" class="text-decoration-none">Create a page</a> <span class="fw-normal">for a celebrity, band or business</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="bg-white p-2 text-muted">
+        <div class="container">
+            <div class="language d-flex flex-wrap pt-2">
+                <p class="mx-2 mb-0" style="cursor: pointer;">English (US)</p>
+                <p class="mx-2 mb-0" style="cursor: pointer;">বাংলা</p>
+                <p class="mx-2 mb-0" style="cursor: pointer;">Hindi</p>
+                <p class="mx-2 mb-0" style="cursor: pointer;">Urdho</p>
+            </div>
+            <hr>
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 mb-0 hover_two" style="cursor: pointer;">Sign Up</p>
+                <p class="mx-2 mb-0 hover_two" style="cursor: pointer;">Login</p>
+                <p class="mx-2 mb-0 hover_two" style="cursor: pointer;">Messenger</p>
+                <p class="mx-2 mb-0 hover_two" style="cursor: pointer;">Facebook Lite</p>
+                <p class="mx-2 mb-0 hover_two" style="cursor: pointer;">Watch</p>
+            </div>
+            <!-- copyright -->
+            <div class="mt-3 mx-2">
+                <p>Facebook Clone Design By &copy;Infa Ahmed Deepo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js file link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
